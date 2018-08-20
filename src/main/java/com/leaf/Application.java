@@ -9,8 +9,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Application {
 
-    @RequestMapping("/")
+   /* @RequestMapping("/")
     public String greeting(){
+        return "Hello World";
+    }*/
+
+    @RequestMapping("/")
+    public String index(){
+        return "Index Page";
+    }
+
+    @RequestMapping("/hello")
+    public String hello(){
         return "Hello World";
     }
 
