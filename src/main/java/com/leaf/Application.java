@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
+@RequestMapping("/classPath")
 public class Application {
 
    /* @RequestMapping("/")
@@ -22,6 +23,11 @@ public class Application {
     @RequestMapping("/hello")
     public String hello(){
         return "Hello World";
+    }
+
+    @RequestMapping("/methodPath")
+    public String method(){
+        return "mapping url is /classPath/methodPath";
     }
 
     public static void main(String[] args) {
